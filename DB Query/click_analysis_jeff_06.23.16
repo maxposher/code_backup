@@ -1,0 +1,90 @@
+
+select *
+FROM analytics_scratch.feed_clicks
+limit 10
+
+
+
+
+SELECT
+    at :: DATE                                AS click_date,
+    app,
+    ab_segment                                AS user_ab_segment,
+    json_extract_path_text(dp, 'layout_type') AS layout_type,
+    json_extract_path_text(dp, 'location')    AS location,
+    json_extract_path_text(dp, 'position')    AS position,
+    json_extract_path_text(dp, 'story_type')  AS story_type,
+    count(distinct R."a|id" )                 AS clickers,
+    count(* )                                 AS clicks
+  FROM (
+    SELECT R."a|id",
+      at,
+      "u|a"                                                                                     AS app,
+      "a|ab"                                                                                    AS ab_segment,
+      REPLACE(REPLACE(REPLACE(REPLACE("do|p", '{', '{"'), '=', '":"'), ', ', '","'), '}', '"}') AS dp
+    FROM raw_events.all AS R
+    WHERE v = 'c' AND "do|p" IS NOT NULL AND "do|p" != ''
+    AND R."at" >= '2016-06-17' AND R."at" < '2016-06-23'   ) AS R
+  GROUP BY 1, 2, 3, 4, 5, 6, 7
+  ORDER BY 1 DESC, 2 DESC
+  
+  /************************************************************/
+  SELECT
+    at :: DATE                                AS click_date,
+    app,
+    ab_segment                                AS user_ab_segment,
+    count(distinct R."a|id" )                 AS clickers,
+    count(* )                                 AS clicks
+  FROM (
+    SELECT R."a|id",
+      at,
+      "u|a"                                                                                     AS app,
+      "a|ab"                                                                                    AS ab_segment,
+      REPLACE(REPLACE(REPLACE(REPLACE("do|p", '{', '{"'), '=', '":"'), ', ', '","'), '}', '"}') AS dp
+    FROM raw_events.all AS R
+    WHERE v = 'c' AND "do|p" IS NOT NULL AND "do|p" != ''
+    AND R."at" >= '2016-06-17' AND R."at" < '2016-06-23'   ) AS R
+  GROUP BY 1, 2,3
+  ORDER BY 1 DESC, 2 DESC
+  
+  
+  
+  
+ 
+  
+  SELECT order_id, sum(final_postage*0.01)
+  FROM analytics.dw_shipping_labels
+  GROUP BY 1
+  HAVING COUNT (distinct label_id) > 1
+ 
+  LIMIT 10
+  
+  
+  
+SELECT 
+	TO_CHAR(dw_shipping_labels.created_at, 'YYYY-MM') AS "dw_shipping_labels.created_month",
+	SUM(dw_shipping_labels.final_postage*.01)
+FROM analytics.dw_shipping_labels AS dw_shipping_labels
+WHERE ((dw_shipping_labels.created_at >= (TIMESTAMP '2015-01-01'))) AND ((dw_shipping_labels.created_at >= (TIMESTAMP '2015-01-01')))
+GROUP BY 1
+ORDER BY 1 DESC
+LIMIT 500
+  
+  
+  
+  
+  
+  LIMIT 200
+  
+  
+  SELECT app, order_gmv*0.01
+  FROM analytics.dw_orders AS O
+  WHERE O.order_number = 1
+  AND  O.booked_at >= '2012-01-01'
+  limit 200
+  
+  
+  SELECT order_id, avg(order_item
+  FROM analytics.dw_order_items AS IO
+  WHERE order_id = '5768c5ce2e39e72db01ae67d'
+  limit 200

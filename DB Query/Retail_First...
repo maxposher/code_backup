@@ -1,0 +1,14 @@
+
+
+WITH Order_Gap AS
+(
+    SELECT buyer_id, booked_at, ROW_NUMBER() OVER (ORDER BY booked_at DESC) AS OC
+    FROM   analytics.dw_orders 
+    WHERE  order_number >= 2
+    AND    booked_at > '2016-01-01'
+
+)
+SELECT buyer_id, booked_at, OC
+FROM   Order_Gap
+WHERE  OC <= 2
+LIMIT 10

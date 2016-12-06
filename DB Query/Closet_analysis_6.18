@@ -1,0 +1,79 @@
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions" 
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+
+
+/* Sessions for users without a closet */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions"
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated IS NULL
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+
+/* Sessions for users with a closet */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions"
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated is NOT NULL
+AND dw_users.date_lister_activated < raw_mongo_user_traces.dt
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+/* Lister made a listing past 7 days */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions" 
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated is NOT NULL
+AND dw_users.days_since_last_listing < 8
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+/* Lister made a listing past 30 days */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions"
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated is NOT NULL
+AND dw_users.days_since_last_listing < 31
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+/* last sell 7 days */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions"
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated is NOT NULL
+AND dw_users.days_since_last_sell < 8
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+
+/* last sell 30 days */
+SELECT raw_mongo_user_traces.dt, avg(cast(raw_mongo_user_traces_agg.iba AS float)) AS "iPhone_sessions", avg(cast(raw_mongo_user_traces_agg.aba AS float)) AS "Android_sessions",avg(cast(raw_mongo_user_traces_agg.wba as float)) AS "Web_sessions"
+FROM raw_mongo.user_traces AS raw_mongo_user_traces
+LEFT JOIN raw_mongo.user_traces_agg AS raw_mongo_user_traces_agg ON raw_mongo_user_traces_agg.user_traces_id = raw_mongo_user_traces.generated_id
+LEFT JOIN analytics.dw_users AS dw_users ON raw_mongo_user_traces.uid  = dw_users.user_id
+WHERE raw_mongo_user_traces.dt > '2014-12-31'
+AND dw_users.date_lister_activated is NOT NULL
+AND dw_users.days_since_last_sell < 31
+GROUP BY raw_mongo_user_traces.dt 
+ORDER BY raw_mongo_user_traces.dt
+            
+            
+            
+                

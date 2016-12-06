@@ -1,0 +1,171 @@
+campaign_name	offer	type	segment	reason	offer_eligibility	campaign_date
+	0	SWS	All	GMV	50+	2014-08-30 00:00:00
+	(null)	SWS	All	GMV	price drop/10+/10% price drop	2015-11-22 00:00:00
+	399	SWS	All	GMV	30+	2014-12-20 00:00:00
+	0	SWS	All	GMV	50+	2013-12-02 00:00:00
+	300	SWS	All	GMV	35+	2015-04-23 00:00:00
+	0	SWS	All	GMV	50+	2013-11-30 00:00:00
+	99	CCO	All	GMV	price drop	2015-04-19 00:00:00
+(null)	99	CCO	All	GMV	price drop	2015-12-14 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-14 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-01-02 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-07-05 00:00:00
+(null)	299	SWS	All	GMV	30+	2015-12-17 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-07-03 00:00:00
+(null)	399	VIP	All	GMV	$10+	2015-06-05 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-08 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-29 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-15 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-20 00:00:00
+(null)	99	CCO	All	GMV	price drop	2015-06-29 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-26 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-06 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-11 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-10 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-23 00:00:00
+(null)	199	CCO	All	GMV	price drop	2015-12-12 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-01-01 00:00:00
+	299	SWS	All	GMV	35+	2014-06-28 00:00:00
+	199	CCO	All	GMV	price drop	2015-06-14 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-09 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-25 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-07 00:00:00
+(null)	(null)	CCO	All	GMV	price drop 50%	2014-11-21 00:00:00
+(null)	199	CCO	All	GMV	price drop	2015-12-13 00:00:00
+(null)	(null)	CCO	All	GMV	price drop 50%	2014-11-23 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-30 00:00:00
+(null)	0	SWS	All	GMV	50+	2013-12-18 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-07 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-01 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-18 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-28 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-12 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-14 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-11 00:00:00
+(null)	0	SWS	All	SWS	SWS	2013-11-08 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-06 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-28 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-29 00:00:00
+(null)	0	SWS	All	GMV	50+	2013-12-20 00:00:00
+	299	SWS	All	GMV	35+	2014-06-24 00:00:00
+	199	CCO	All	GMV	price drop	2015-05-29 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-05-24 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-01-03 00:00:00
+	299	SWS	All	GMV	35+	2014-06-30 00:00:00
+	199	CCO	All	GMV	30+	2015-06-19 00:00:00
+	0	SWS	All	GMV	50+	2014-08-31 00:00:00
+	(null)	SWS	All	GMV	price drop/10+/10% price drop	2015-11-23 00:00:00
+	399	SWS	All	GMV	30+	2014-12-18 00:00:00
+	199	CCO	All	GMV	price drop	2015-03-31 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-11-15 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-17 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-25 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-30 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-30 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-26 00:00:00
+(null)	299	SWS	All	GMV	30+	2015-11-26 16:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-10 00:00:00
+(null)	0	SWS	All	SWS	SWS	2013-11-10 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-08 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-27 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-15 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-05 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-27 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-22 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-14 00:00:00
+(null)	299	CCO	All	GMV	price drop	2015-04-05 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-24 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-24 00:00:00
+(null)	(null)	CCO	All	GMV	price drop 50%	2014-11-22 00:00:00
+	299	SWS	All	GMV	35+	2014-06-26 00:00:00
+	99	CCO	All	GMV	price drop	2015-05-31 00:00:00
+	299	SWS	All	GMV	35+	2014-06-22 00:00:00
+	99	CCO	All	GMV	price drop	2015-04-30 00:00:00
+	0	SWS	All	GMV	50+	2014-07-06 00:00:00
+	299	SWS	All	GMV	30+	2015-06-26 00:00:00
+	0	SWS	All	GMV	50+	2014-09-01 00:00:00
+	(null)	SWS	All	GMV	price drop/10+/10% price drop	2015-11-24 00:00:00
+	299	SWS	All	GMV	35+	2014-06-20 00:00:00
+	99	CCO	All	GMV	price drop	2015-04-26 00:00:00
+	299	CCO	All	GMV	price drop	2015-04-10 00:00:00
+	0	SWS	All	GMV	50+	2014-07-04 00:00:00
+	199	CCO	All	GMV	price drop	2015-06-23 00:00:00
+	399	SWS	All	GMV	30+	2014-12-21 00:00:00
+	0	SWS	All	GMV	50+	2013-11-28 00:00:00
+	300	SWS	All	GMV	35+	2015-04-15 00:00:00
+	299	SWS	All	GMV	35+	2014-06-19 00:00:00
+	299	SWS	All	GMV	29+	2015-04-24 00:00:00
+	0	SWS	All	GMV	50+	2013-12-01 00:00:00
+	199	CCO	All	GMV	price drop	2015-04-21 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-02 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-29 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-13 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-27 00:00:00
+(null)	399	VIP	All	GMV	$10+	2015-06-06 00:00:00
+(null)	99	CCO	All	GMV	price drop	2015-06-28 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-26 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-26 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-08 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-07-17 00:00:00
+	299	SWS	All	GMV	35+	2014-06-29 00:00:00
+	99	CCO	All	GMV	price drop	2015-06-15 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-30 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-13 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-13 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-12 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-24 00:00:00
+(null)	199	CCO	All	GMV	10+	2015-12-20 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-12 00:00:00
+(null)	0	SWS	All	SWS	SWS	2013-11-09 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-28 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-31 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-29 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-07-04 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-09 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-04 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-16 00:00:00
+(null)	299	SWS	All	GMV	30+	2015-11-27 00:00:00
+(null)	199	CCO	All	GMV	price drop	2015-11-29 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-25 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-01 00:00:00
+	299	SWS	All	GMV	35+	2014-06-25 00:00:00
+	99	CCO	All	GMV	price drop	2015-05-30 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-03 00:00:00
+	0	SWS	All	GMV	50+	2014-07-03 00:00:00
+	99	CCO	All	GMV	price drop	2015-06-21 00:00:00
+(null)	299	SWS	All	SWS	SWS	2013-09-28 00:00:00
+(null)	299	SWS	All	GMV	30+	2015-12-16 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-31 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-05 00:00:00
+(null)	199	CCO	All	GMV	10+	2015-12-19 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-21 00:00:00
+(null)	399	VIP	All	GMV	0	2014-05-19 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-09-05 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-01-04 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-11-06 00:00:00
+(null)	100	SWS	All	GMV	35+	2013-12-07 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-27 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-04 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2015-01-05 00:00:00
+(null)	(null)	CCO	All	GMV	price drop	2014-12-11 00:00:00
+(null)	199	CCO	All	GMV	price drop	2015-11-30 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-09-07 00:00:00
+(null)	0	SWS	All	GMV	50+	2015-09-06 00:00:00
+(null)	0	SWS	All	GMV	50+	2013-12-19 00:00:00
+(null)	99	CCO	All	GMV	price drop	2015-04-06 00:00:00
+	299	SWS	All	GMV	35+	2014-06-27 00:00:00
+	399	VIP	All	GMV	$10+	2015-06-07 00:00:00
+	299	SWS	All	GMV	35+	2014-06-23 00:00:00
+	(null)	CCO	All	GMV	price drop	2015-05-25 00:00:00
+	399	SWS	All	GMV	30+	2014-12-19 00:00:00
+	0	SWS	All	GMV	50+	2014-08-29 00:00:00
+	99	CCO	All	GMV	price drop	2015-06-30 00:00:00
+	299	SWS	All	GMV	35+	2014-06-21 00:00:00
+	199	CCO	All	GMV	price drop	2015-04-28 00:00:00
+	(null)	CCO	All	GMV	price drop	2015-11-15 00:00:00
+	199	CCO	All	GMV	price drop	2015-04-12 00:00:00
+	0	SWS	All	GMV	50+	2014-07-05 00:00:00
+	99	CCO	All	GMV	price drop	2015-06-24 00:00:00
+	0	SWS	All	GMV	50+	2013-11-29 00:00:00
+	199	CCO	All	GMV	price drop	2015-04-17 00:00:00
+	199	CCO	All	GMV	price drop	2015-03-30 00:00:00

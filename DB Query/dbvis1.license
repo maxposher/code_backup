@@ -1,0 +1,12 @@
+# DbVisualizer license key
+dbvis.license.product        = DbVisualizer
+dbvis.license.edition        = Personal
+dbvis.license.id             = 75780581 / #1
+dbvis.license.name           = Poshmark, Inc.
+dbvis.license.org            = Poshmark, Inc.
+dbvis.license.activation     = 2015-06-09
+dbvis.license.expire         = 2099-01-01
+dbvis.license.upgrade.expire = 2016-06-09
+dbvis.license.seal           = MCwCFAyZvgkKNtOJ9FhKQdWuUM9wm/b/AhQKVaCs3NPv0VgmbXWWx5XvmkrtLg==
+# The following is needed only for backward compatibility
+dbvis.license.version        = 5.*
